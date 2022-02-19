@@ -74,7 +74,7 @@ p{
 }
 
 /******** aside-main-block *********/
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 1000px) {
     .aside-main-block{
        
         }
@@ -101,7 +101,7 @@ aside{
     height: 100vh;
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 1000px) {
     aside{
         height: auto;
     }
@@ -124,7 +124,7 @@ aside{
 
 
 
-@media screen and (min-width: 950px){
+@media screen and (min-width: 1000px){
     .reward-img{
         position: fixed;
         width: 40%;
@@ -133,7 +133,7 @@ aside{
     .deal-img{
         position: relative;
         width: 60%;
-        
+        left: 40%;
     }
 }
 
@@ -141,11 +141,72 @@ aside{
 .aside__hidden{
     display: none;
 }
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 1000px) {
     .aside__hidden{
-        display: inline;
+        display: inline-block;
         width: 40%;
-        height: 100vh;
+        height: 200vh;
         float: left;
+        margin-right: 5rem;
+        
+
     }
 }
+
+/********** Starter-Block ***********/
+.starter-block{
+    padding: 1.5rem;
+}
+
+/* Dariy-block */
+.dairy-block{
+    margin: 3rem 0 6rem;
+}
+.dairy-block h2{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+.dairy-block p{
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 950px) {
+   .dairy-block{
+       
+   }
+}
+
+/* Delivers-block */
+.delivers-block{
+   display: grid;
+}
+.pic-title{
+    font-weight: bold;
+    color: black;
+    letter-spacing: 2px;
+    margin-bottom: 2.5rem;
+}
+.delivers-block img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.title-order p{
+    margin-bottom: 2.5rem;
+    line-height: 1.2;
+}
+
+@media screen and (min-width: 760px) {
+    .delivers-block{
+        grid-template-columns: repeat(2,1fr);
+        gap: 5rem;
+    }
+   
+}
+@media screen and (min-width: 1000px) {
+    
+    .title-order{
+        width: 26rem;
+    }
+}
+
