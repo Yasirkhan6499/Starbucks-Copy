@@ -2,7 +2,7 @@
 :root{
     --green-dark: rgba(12, 112, 12, 0.801);
     --green-light: rgb(32, 148, 32);
-    --green-highlight: rgb(39, 180, 39);
+    --green-highlight: rgb(230, 247, 230);
     --black: black;
     --gray: rgb(216, 216, 216);
 
@@ -13,6 +13,7 @@ html{
 body{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5rem;
+    
 }
 p{
     color: rgb(90, 90, 90);
@@ -23,6 +24,8 @@ p{
     padding: 1rem 2rem;
     outline:none;
     font-weight: bold;
+    transition: background-color 0.3s;
+    cursor: pointer;
 }
 .btn--primary{
     color: var(--green-dark);
@@ -35,6 +38,13 @@ p{
     background-color: black;
     border: none;
 }
+.btn--primary:hover{
+    background-color: var(--green-highlight);
+    
+}
+.btn--secondary{
+    background-color: rgb(221, 221, 221);
+}
 /********** Card ***********/
 .card{
     box-shadow: 0 0 4px gray;
@@ -43,6 +53,7 @@ p{
 }
 .card img{
     width: 100%;
+    
 }
 .card__content{
     padding: 2rem;
@@ -56,3 +67,85 @@ p{
     margin-top: 0.7rem;
 }
 
+@media screen and (min-width: 750px) {
+    .card{
+        
+    }
+}
+
+/******** aside-main-block *********/
+@media screen and (min-width: 950px) {
+    .aside-main-block{
+       
+        }
+}
+
+
+/******* Order-Block **********/
+
+.order-block{
+    display: grid;
+   
+}
+
+@media screen and (min-width: 760px){
+    .order-block{
+       grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+      justify-items: center;
+    }
+}
+
+/******* Aside ************/
+aside{
+    position: relative;
+    height: 100vh;
+}
+
+@media screen and (min-width: 950px) {
+    aside{
+        height: auto;
+    }
+}
+
+/********** Aside images **********/
+.reward-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 50;
+}
+.deal-img{
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+
+
+@media screen and (min-width: 950px){
+    .reward-img{
+        position: fixed;
+        width: 40%;
+        left: 0;
+    }
+    .deal-img{
+        position: relative;
+        width: 60%;
+        
+    }
+}
+
+/******** aside__hidden ****/
+.aside__hidden{
+    display: none;
+}
+@media screen and (min-width: 980px) {
+    .aside__hidden{
+        display: inline;
+        width: 40%;
+        height: 100vh;
+        float: left;
+    }
+}
