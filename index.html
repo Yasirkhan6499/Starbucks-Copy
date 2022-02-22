@@ -14,6 +14,47 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <nav class="navbar collapsible">
+      <img
+        class="navbar__logo"
+        src="/images/Starbucks-Logo.png"
+        alt="starbucks logo"
+      />
+      <div class="flex-lists menu--pc">
+        <ul class="list list--horizontal">
+          <li>Menu</li>
+          <li>Nutrition</li>
+          <li>Delivers</li>
+          <li>Rewards</li>
+        </ul>
+
+        <ul class="list  list--button-horizontal">
+          <li><i class="location-icon fa-solid fa-location-pin"></i> <p style="font-weight: bold;">Find a store</p></li>
+          <li><button class="btn btn--primary">Sign in</button>
+          <li><button class="btn btn--secondary">Join now</button></li>
+            
+        </ul>
+      </div>
+
+      <i class="menu-bars fa-solid fa-bars"></i>
+
+      <section class="menu--mobile">
+        <ul class="list list--hidden">
+          <li>Menu</li>
+          <li>Nutrition</li>
+          <li>Delivers</li>
+          <li>Rewards</li>
+        </ul>
+        <i class="menu-line fa-solid fa-minus"></i>
+
+        <ul class="list list--button">
+          <li><button class="btn btn--primary">Sign in</button>
+          <li><button class="btn btn--secondary">Join now</button></li></li>
+          <li><i class="location-icon fa-solid fa-location-pin"></i> <p style="font-weight: bold;">Find a store</p></li>
+        </ul>
+      </section>
+    </nav>
+
     <section class="aside-main-block">
       <aside>
         <img class="reward-img" src="/images/left-image.png" alt="" />
@@ -21,35 +62,10 @@
         <img class="aside__hidden" src="/images/left-image.png" alt="" />
       </aside>
     </section>
-
-    <section class="starter-block">
-      <div class="dairy-block">
-        <h2>Free non-dairy choices in your usual!</h2>
-        <p>
-          Want to try something new this year? With five dairy alternatives all
-          on us, the choice is yours 🌱
-        </p>
-        <button class="btn btn--primary">Order now</button>
-      </div>
-      <p class="pic-title">OAT LATTE SEASON!</p>
-
-      <div class="delivers-block">
-        <img src="/images/oat.jfif" alt="Oat Twist Drink" />
-
-        <div class="title-order">
-          <h2>Starbucks® Delivers</h2>
-          <p>
-            Something new to see you through the post-holiday blues?
-            <br /><br />
-            Discover the vibrant mix of Strawberry & Vanilla Oat Latte, the
-            uplifting blend of Honey & Hazelnut Latte, or our luxurious Dark
-            Cocoa & Orange Oat Latte.<br /><br />
-            Order now straight to your door via Uber Eats, Just Eat or
-            Deliveroo!
-          </p>
-          <button class="btn btn--primary">Order now</button>
-        </div>
-      </div>
-    </section>
+    <script
+      src="https://kit.fontawesome.com/e8ad5b69a5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

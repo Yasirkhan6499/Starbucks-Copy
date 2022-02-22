@@ -42,8 +42,8 @@ p{
     background-color: var(--green-highlight);
     
 }
-.btn--secondary{
-    background-color: rgb(221, 221, 221);
+.btn--secondary:hover{
+    background-color: rgb(131, 131, 131);
 }
 /********** Card ***********/
 .card{
@@ -210,3 +210,132 @@ aside{
     }
 }
 
+
+/************* NavBar ***************/
+.navbar{
+    background-color: white;
+    display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.navbar__logo{
+    
+    width: 80px;
+    margin-top: 1rem;
+}
+.menu-bars{
+  
+margin: 3rem 2rem 0;
+transform: scale(1.4);
+}
+
+    
+
+
+
+/******* list ********/
+.list{
+    list-style: none;
+    
+}
+
+/* list button */
+.list--button li{
+    margin: 2rem 0;
+}
+/* list horizontal */
+.list--horizontal li{
+    display: inline;
+    padding: 2rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+/*** location icon ****/
+.location-icon{
+    float: left;
+    margin-right: 1rem;
+    
+}
+
+/****** menu--mobile ***********/
+ .menu--mobile{
+     display: none;
+    width: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+.collapsible--expanded .menu--mobile{
+    background-color: white;
+    z-index: 110;
+    position: absolute;
+    right: 0;
+    margin-top: 5.5rem;
+    display: block;
+    width: 70vw;
+    opacity: 1;
+    transition: all 1s;
+}
+
+/******** list- hidden -----*/
+.list--hidden{
+    padding: 0;
+}
+.list--hidden li{
+    padding: 3rem 2rem;
+    font-size: 2rem;
+}
+.list--hidden li:hover{
+    background-color: rgb(226, 226, 226);
+}
+.menu-line{
+    color: black;
+    font-size: 2rem;
+    transform: scaleX(18);
+    color: gray;
+    position: relative;
+    left: 32vw;
+}
+.menu--pc{
+    display: none;
+}
+/******* menu for PC *************/
+@media screen and (min-width: 900px) {
+    .navbar{
+        padding: 2rem;
+    }
+.collapsible--expanded .menu--mobile{
+     display: none;
+     width: 0;
+     opacity: 0;
+ }
+  .menu-bars{
+    width: 0;
+    opacity: 0;
+  }
+  .navbar{
+      justify-content: start;
+      margin-bottom: 1rem;
+  }
+  .navbar__logo{
+      object-fit: cover;
+      
+  }
+  .list--horizontal{
+      margin-top: 3rem;
+  }
+
+  /*-Flex lists */
+  .flex-lists{
+      display: flex;
+      
+  }
+  .list--button-horizontal{
+    position:absolute;
+    right: 20px;
+  }
+ .list--button-horizontal li{
+     display: inline-block;
+     padding-right: 2rem;
+    
+ }
+}
