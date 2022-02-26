@@ -353,12 +353,14 @@ transform: scale(1.4);
 }
 /******* main *******/
 main{
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(247, 247, 247);
+   
 }
 /********** Footer ***********/
 footer{
     background-color: white;
     box-shadow: 0 0 2px -3px gray;
+    
    
 }
 
