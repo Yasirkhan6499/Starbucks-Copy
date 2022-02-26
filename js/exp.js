@@ -7,26 +7,39 @@
 //reward_img, then the position of this property will become
 //"fixed", which seems like the element is position property
 //is "sticky" from the start.
-let body_element = document.getElementById('body-id');
 
-body_element.addEventListener("scroll",rewardPosSticky );
-function rewardPosSticky(){
+window.addEventListener('scroll', function(e){
     //elements declaration
-let aside = document.getElementById('aside');
-let reward_img = document.getElementById("reward-img");
+    let aside = document.getElementById('aside');
+    let reward_img = document.getElementById("reward-img");
+    
+    
+    let aside_pos = aside.offsetTop; /* check the top position 
+    of the element, with regards to the position of its parent.
+    */ 
+    if(window.innerWidth>=1000) //if on PC then execute this code
+    if(window.scrollY >= (aside_pos)){
+     reward_img.style.position = "fixed";
+     reward_img.style.top = 0;
+    }else{
+     reward_img.style.position = "absolute";
+    }
+});
+// function rewardPosSticky(){
+//     //elements declaration
+// let aside = document.getElementById('aside');
+// let reward_img = document.getElementById("reward-img");
 
 
-let aside_pos = aside.offsetTop; /* check the top position 
-of the element, with regards to the position of its parent.
-*/ 
-if(window.innerWidth>=1000) //if on PC then execute this code
-if(window.scrollY >= (aside_pos)){
- reward_img.style.position = "fixed";
- reward_img.style.top = 0;
-}else{
- reward_img.style.position = "absolute";
-}
+// let aside_pos = aside.offsetTop; /* check the top position 
+// of the element, with regards to the position of its parent.
+// */ 
+// if(window.innerWidth>=1000) //if on PC then execute this code
+// if(window.scrollY >= (aside_pos)){
+//  reward_img.style.position = "fixed";
+//  reward_img.style.top = 0;
+// }else{
+//  reward_img.style.position = "absolute";
+// }
 
-}
-
-console.log("helloww");
+// }
