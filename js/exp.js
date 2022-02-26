@@ -26,3 +26,7 @@ if(window.scrollY >= (aside_pos)){
 }
 
 }
+
+function hi(){
+    
+}
