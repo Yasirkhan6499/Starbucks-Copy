@@ -55,7 +55,7 @@ p{
 .card{
     box-shadow: 0 0 4px gray;
     margin: 2rem;
-    
+   
 }
 .card img{
     width: 100%;
@@ -98,6 +98,7 @@ p{
     .order-block{
        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
       justify-items: center;
+      
     }
 }
 
@@ -132,26 +133,29 @@ aside{
 
 @media screen and (min-width: 1000px){
     .reward-img{
-        position: fixed;
+       position: absolute;
+       height: 100vh;
         width: 40%;
         left: 0;
     }
     .deal-img{
         position: relative;
-        width: 60%;
         left: 40%;
+        width: 60%;
     }
 }
 
 /******** aside__hidden ****/
 .aside__hidden{
     display: none;
+    opacity: 0;
 }
 @media screen and (min-width: 1000px) {
     .aside__hidden{
+        opacity: 0;
         display: inline-block;
         width: 40%;
-        height: 200vh;
+        height: 320vh;
         float: left;
         margin-right: 5rem;
         
@@ -176,11 +180,7 @@ aside{
     margin-bottom: 3rem;
 }
 
-@media screen and (min-width: 950px) {
-   .dairy-block{
-       
-   }
-}
+
 
 /* Delivers-block */
 .delivers-block{
