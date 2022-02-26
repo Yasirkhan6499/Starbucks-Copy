@@ -7,7 +7,9 @@
 //reward_img, then the position of this property will become
 //"fixed", which seems like the element is position property
 //is "sticky" from the start.
+let body_element = document.getElementById('body-id');
 
+body_element.addEventListener("scroll",rewardPosSticky );
 function rewardPosSticky(){
     //elements declaration
 let aside = document.getElementById('aside');
@@ -27,6 +29,3 @@ if(window.scrollY >= (aside_pos)){
 
 }
 
-function hi(){
-    
-}
