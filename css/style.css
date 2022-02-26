@@ -351,8 +351,17 @@ transform: scale(1.4);
     
  }
 }
-
+/******* main *******/
+main{
+    background-color: rgb(245, 245, 245);
+}
 /********** Footer ***********/
+footer{
+    background-color: white;
+    box-shadow: 0 0 2px -3px gray;
+   
+}
+
 
 /***list--vertical li */
 .list--vertical li{
@@ -398,6 +407,9 @@ transform: scale(1.4);
 
 /***** Footer-top ***********/
 
+.footer-top .list--vertical{
+    margin-top: 0;
+}
 .footer-top .list--vertical > li{
     font-size: 2.6rem;
     font-weight: 500;
